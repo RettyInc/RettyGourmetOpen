@@ -127,7 +127,7 @@ $ curl -s -H "Authorization: Basic $(echo -n retty_gourmet_open:aiNeT2ca | base6
 もう答えは出ていますが、下記のようにして目的のキーだけを絞ることができます。`-r` はダブルクォーテーションを表示させないオプションです。
 
 ```
-$ curl -s -H "Authorization: Basic $(echo -n retty_gourmet_open:aiNeT2ca | base64)" "https://p3hpemjpit.ap-northeast-1.awsapprunner.com/api/restaurants" | jq '.[] | select(.area.area_id == "14")' | jq '. | select(.restaurant_name | contains("珉"))' | jq '. | select(.restaurant_name | contains("店") | not)' | jq '. | select(.restaurant_name | match("^(?!.*[a-zA-Z]).*$"))' | jq -r .restaurant_id
+$ curl -s -H "Authorization: Basic $(echo -n retty_gourmet_open:aiNeT2ca | base64)" "https://p3hpemjpit.ap-northeast-1.awsapprunner.com/api/restaurants" | jq '.[] | select((.restaurant_name | match("^(?!.*[a-zA-Z]).*$")) and (.restaurant_name | contains("珉")) and (.area.area_id == "14") and (.restaurant_name | contains("店") | not))' | jq -r .restaurant_id
 ```
 
 
