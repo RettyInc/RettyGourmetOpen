@@ -81,7 +81,7 @@ $ cat ~/retty_decoreded
 上記に従って文字コードUTF-8(without BOM)にして、改行コードをLFにしたファイルのmd5値を確認します。
 
 ```shell
-$ md5 ~/retty_decorded
+$ md5 ~/retty_decoreded
 af9aa132755d95816bf0dad3a74f8d63
 ```
 
