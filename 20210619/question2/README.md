@@ -16,6 +16,17 @@ curl と jq を使用して次の条件に当てはまるお店 ID (restaurant_i
 https://p3hpemjpit.ap-northeast-1.awsapprunner.com
 ````
 
+※ 2021/06/21 現在上記のエンドポイントは使用できなくなっているため、下記のようにしてローカルで Docker コンテナを立ち上げてください。
+
+```
+$ docker run --rm -p 80:80 public.ecr.aws/q0z9k4a9/rec23_shell_challenge
+```
+
+```
+$ curl localhost/healthz
+{"status":"OK"}
+```
+
 #### 認証方法
 BASIC 認証をかけています。認証情報は下記のとおりです。
 
