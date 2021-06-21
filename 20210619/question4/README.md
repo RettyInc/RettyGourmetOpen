@@ -60,7 +60,7 @@ https://gist.github.com/saku/58679ac9162bf17170912d832e95aa34 を読み、 `/wel
 ```
 
 ```shell
-$ cat ~/retty | base64 -d > ~/retty_decoreded 
+$ cat ~/retty | base64 -d > ~/retty_decoded 
 ```
 
 Step3の説明を確認します。  
@@ -68,12 +68,12 @@ Step2でbase64 decodeしたファイルを文字コードUTF-8(without BOM)に�
 nkfを使うと簡単です。
 
 ```shell
-$ nkf -w -Lu --overwrite ~/retty_decoreded
+$ nkf -w -Lu --overwrite ~/retty_decoded
 ```
 
 文字コードと改行コードをなおしたらファイルの中身を確認します。
 ```shell
-$ cat ~/retty_decoreded
+$ cat ~/retty_decoded
 あなたはだんだんRettyに入社したくなる
 このファイルが読めるようになったらmd5値を取ろう！
 ```
@@ -81,7 +81,7 @@ $ cat ~/retty_decoreded
 上記に従って文字コードUTF-8(without BOM)にして、改行コードをLFにしたファイルのmd5値を確認します。
 
 ```shell
-$ md5 ~/retty_decoreded
+$ md5 ~/retty_decoded
 af9aa132755d95816bf0dad3a74f8d63
 ```
 
