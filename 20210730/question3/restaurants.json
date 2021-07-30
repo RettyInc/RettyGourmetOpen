@@ -1,0 +1,88 @@
+[
+  {
+    "id": 19831008,
+    "name": "おにぎり屋さん",
+    "distance": 1000,
+    "distance_from_station": 400,
+    "dinner_budget": null,
+    "lunch_budget": 300,
+    "payment_methods": [
+      "QR",
+      "Credit",
+      "Cash"
+    ],
+    "recommenders_count": 420,
+    "status": 1
+  },
+  {
+    "id": 12109451,
+    "name": "焼き鳥屋",
+    "distance": 300,
+    "distance_from_station": 400,
+    "dinner_budget": 1000,
+    "lunch_budget": 1000,
+    "payment_methods": [
+      "Cash"
+    ],
+    "recommenders_count": 312,
+    "status": 1
+  },
+  {
+    "id": 16244132,
+    "name": "伝説のうな丼",
+    "distance": 150,
+    "distance_from_station": 300,
+    "dinner_budget": 6000,
+    "lunch_budget": null,
+    "payment_methods": [
+      "Credit",
+      "Cash"
+    ],
+    "recommenders_count": 14694,
+    "status": 0
+  },
+  {
+    "id": 15614324,
+    "name": "焼肉一筋",
+    "distance": 30,
+    "distance_from_station": 100,
+    "dinner_budget": 3000,
+    "lunch_budget": 2000,
+    "payment_methods": [
+      "QR",
+      "Credit",
+      "Cash"
+    ],
+    "recommenders_count": 821,
+    "status": 1
+  },
+  {
+    "id": 13455313,
+    "name": "ぱんや",
+    "distance": 250,
+    "distance_from_station": 450,
+    "dinner_budget": null,
+    "lunch_budget": 300,
+    "payment_methods": [
+      "Credit",
+      "Cash"
+    ],
+    "recommenders_count": 519,
+    "status": 1
+  },
+  {
+    "id": 18136859,
+    "name": "The Pizza",
+    "distance": 100,
+    "distance_from_station": 200,
+    "dinner_budget": 2000,
+    "lunch_budget": 1000,
+    "payment_methods": [
+      "QR",
+      "Credit",
+      "Cash"
+    ],
+    "recommenders_count": 123,
+    "status": 2
+  }
+]
