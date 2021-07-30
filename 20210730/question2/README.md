@@ -58,3 +58,5 @@ rateの種類
 - GOOD
 - AVERAGE
 - 評価なし
+
+[回答](https://github.com/RettyInc/RettyGourmetOpen/blob/main/20210730/question2/answer.md)
