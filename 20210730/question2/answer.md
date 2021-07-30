@@ -2,6 +2,18 @@
 
 ## データベース操作
 
+## データベースをインポート
+
+```
+mysql -h localhost -u root < question2.sql
+```
+
+## データベースに接続
+
+```
+mysql -h localhost -u root
+```
+
 ### データベースを確認
 
 ```
