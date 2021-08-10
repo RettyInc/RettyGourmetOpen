@@ -36,7 +36,7 @@ show tables;
 
 ### テーブルの中身を確認
 
-```
+```sql
 SELECT * FROM user LIMIT 20;
 SELECT * FROM restaurant LIMIT 20;
 SELECT * FROM report LIMIT 20;
@@ -46,7 +46,7 @@ SELECT * FROM report LIMIT 20;
 
 ### RestaurantテーブルとReportテーブルを結合
 
-```
+```sql
 # Restaurantテーブルから「中華麺舗 虎」を取得
 SELECT * FROM restaurant WHERE name = "中華麺舗 虎"
 
@@ -64,7 +64,7 @@ LIMIT 20;
 
 ### UserテーブルとReportテーブルを結合
 
-```
+```sql
 # Userテーブルから有効なユーザーを取得
 SELECT * FROM user WHERE status = 1;
 
@@ -82,7 +82,7 @@ LIMIT 20;
 
 ### UserテーブルとRestaurantテーブル, Reportテーブルを結合
 
-```
+```sql
 # UserテーブルとRestaurantテーブル, Reportテーブルを結合
 SELECT *
 FROM
@@ -99,7 +99,7 @@ FROM
 	LEFT JOIN user ON report.user_id = user.id
 WHERE
 	restaurant.name = "中華麺舗 虎"
-	AND	user.status = 1
+	AND user.status = 1
 LIMIT 20;
 
 # 結合したテーブルから「中華麺舗 虎」の有効なユーザーのMYBESTの評価がついた口コミを取得
@@ -110,8 +110,8 @@ FROM
 	LEFT JOIN user ON report.user_id = user.id
 WHERE
 	restaurant.name = "中華麺舗 虎"
-	AND	user.status = 1
-	AND	report.rate = "MYBEST"
+	AND user.status = 1
+	AND report.rate = "MYBEST"
 LIMIT 20;
 
 # 結合したテーブルから「中華麺舗 虎」の有効なユーザーのEXCELLENT, GOOD, AVERAGEの評価がついた口コミの数を取得
@@ -125,5 +125,5 @@ FROM
 	LEFT JOIN user ON report.user_id = user.id
 WHERE
 	restaurant.name = "中華麺舗 虎"
-	AND	user.status = 1;
+	AND user.status = 1;
 ```
